@@ -1,0 +1,37 @@
+#nav-container{
+    background-color: grey;
+    display: inline-flex;
+    justify-content: center;
+    width: 100vw;
+}
+.navLink{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.hidden-nav-link{
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+#readPassword{
+    /* width: 5%;
+    height: 10px; */
+}
+#ADAheader{
+    text-align: center;
+    font-size: 2.0rem;
+}
+#fakeForm{
+    text-align: center;
+}
+#homeLink{
+    margin-top: 10%;
+    font-size: 1.25rem;
+    background-color: black;
+    color: white;
+    text-decoration: wavy;
+}

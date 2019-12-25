@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ADA Acessible page</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div id='ADAheader'> this is where the ada accessible form and credentialing would go</div>
+    <div id='fakeForm'> <h2>new customer schpeel</h2> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem saepe voluptate nisi consectetur, fugiat adipisci deserunt commodi blanditiis eveniet. Praesentium modi sequi soluta enim libero, dicta magnam nam iusto sapiente?</p></div>
+    <Container id="demoLogIn">
+        <h1> this log in continer diplays high usable forms and formatting</h1>
+        <div id="LogIn" aria-describedby="this is a are with two fields, one for your password, on for your username. There will be a button that is read before them, if you click or enter on the button your password will be hidden, if you skip by it
+        your password will be read aloud by your screen reader">
+    
+        <button id="readPassword" aria-describedby="click this button to have your password hidden for security as you enter it" onclick="passwordController()">Hide Password</button>
+        <div id="passwordStatus">Your password will currently be read aloud as you enter it</div>
+
+        <input aria-label="userName input" value="userName" placeholder="user name" type="text">
+
+        <input id="passwordInput" aria-label="password input" value="password" placeholder="password" type="text">        
+    </div>
+    </Container>
+    <br>
+    <a href="./index.html" id="homeLink">restart</a>
+</body>
+</html>
+<script src="/app.js"></script>
