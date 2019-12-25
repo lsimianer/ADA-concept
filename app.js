@@ -8,6 +8,16 @@ const adaContainer = () => {
 
 const passwordInput = document.getElementById('passwordInput');
 const statusdiv = document.getElementById('passwordStatus');
+const passwordToggle = document.getElementById('readPassword');
+
+passwordToggle.addEventListener("keyup", function (event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        passwordController()
+    }
+});
+
+
 
 const passwordController = () => {
     if (passwordInput.type === "password") {
