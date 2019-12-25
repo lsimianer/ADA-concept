@@ -8,8 +8,8 @@
     margin-left: 2%;
     margin-right: 2%;
 }
-.hidden-nav-link{
-    visibility: hidden;
+#hidden-nav-link{
+    opacity: 0;
     width: 1px;
     height: 1px;
 }
