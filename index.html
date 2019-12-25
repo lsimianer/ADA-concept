@@ -11,7 +11,7 @@
 
 <body>
     <div id='nav-container'>
-        <div id="hidden-nav-link" class="navLink" onclick='adaContainer()'>
+        <div tabindex="0" id="hidden-nav-link" class="navLink" onclick='adaContainer()' aria-label="If you are using a screen reader please follow this link">
             If you are using a screen reader please follow this link
         </div>
         <div class="navLink">
@@ -31,7 +31,7 @@
     <h1> Welcome to the ADA testing ground</h1>
 
     <container class="mainCon">
-        <div id='test1'>
+        <div tabindex="0" id='test1'>
             <h2> where we test screenreader usability demo div 1</h2>
             <br>
             <p class='fillerText'>
@@ -51,7 +51,7 @@
             </p>
         </div>
 
-        <div id='test1'>
+        <div tabindex="-1" id='test1'>
             <h2> where we test screenreader usability demo div 2</h2>
             <br>
             <p class='fillerText'>
@@ -72,15 +72,15 @@
         </div>
     </container>
 
-    <Container id="ADALinks"
-        aria-describedby="This is a container with two links. one for getting a new quote, the other for agent log in">
+    <Container tabindex="0" id="ADALinks"
+        aria-label="This is a container with two links. one for getting a new quote, the other for agent log in">
 
-        <div aria-describedby="get a quote for screen reader users" id="ADAQuote">
-            <a href="./ada.html"></a>
+        <div tabindex="0" aria-label="get a quote for screen reader users" id="ADAQuote">
+            <a tabindex="0" href="./ada.html"></a>
         </div>
 
-        <div aria-describedby="Agent login for screen reader users" id="ADAAgent">
-            <a href="./ada.html"></a>
+        <div tabindex="0" aria-label="Agent login for screen reader users" id="ADAAgent">
+            <a tabindex="0" href="./ada.html"></a>
         </div>
 
     </Container>
